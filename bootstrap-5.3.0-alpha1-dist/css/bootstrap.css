@@ -87,7 +87,7 @@
   --bs-secondary-color-rgb: 33, 37, 41;
   --bs-secondary-bg: #e9ecef;
   --bs-secondary-bg-rgb: 233, 236, 239;
-  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color: rgba(255,192,203);
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
@@ -133,11 +133,11 @@
   --bs-body-bg-rgb: 33, 37, 41;
   --bs-emphasis-color: #f8f9fa;
   --bs-emphasis-color-rgb: 248, 249, 250;
-  --bs-secondary-color: rgba(173, 181, 189, 0.75);
+  --bs-secondary-color: rgba(255,182,193 0.75);
   --bs-secondary-color-rgb: 173, 181, 189;
   --bs-secondary-bg: #343a40;
   --bs-secondary-bg-rgb: 52, 58, 64;
-  --bs-tertiary-color: rgba(173, 181, 189, 0.5);
+  --bs-tertiary-color: rgba(255,182,193 0.5);
   --bs-tertiary-color-rgb: 173, 181, 189;
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
@@ -188,17 +188,37 @@
   }
 }
 
+img{
+  width:90px ;
+}
+
+.texto{
+  margin-top: 250px;
+  text-align: center ;
+}
+
+.section-title{
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: rgba(255,182,193 0.75);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(255,182,193 0.75);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(255,182,193 0.75);
+}
+.img_corpo{
+  width: 500px;
+  right: 60px;
+  float: right;
+  margin-right: 230px;
+  margin-bottom: 76px;
 }
 
 hr {
@@ -742,6 +762,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  background-color: rgb(255,192,203);
 }
 
 @media (min-width: 576px) {
@@ -8609,7 +8630,7 @@ textarea.form-control-lg {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(255,192,203), var(--bs-bg-opacity) !important;
 }
 
 .bg-body-emphasis {
